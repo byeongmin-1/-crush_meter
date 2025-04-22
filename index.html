@@ -2,21 +2,33 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>짝사랑 확률 테스트</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💘 짝사랑 확률 테스트</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
     <h1>💘 짝사랑 확률 테스트</h1>
-    
+
+    <!-- FormSubmit 설정: action에 이메일만 변경 -->
+    <form
+      id="quiz-form"
+      action="https://formsubmit.co/byeongminchoi12@gmail.com"
+      method="POST"
+      style="display:none;"
+    >
+      <!-- 스팸 방지 완전 OFF -->
+      <input type="hidden" name="_captcha" value="false" />
+      <!-- 전송 후 같은 페이지 유지 -->
+      <input type="hidden" name="_next" value="" />
+      <!-- JS로 질문+결과값(name,score) 히든 필드 추가 예정 -->
+    </form>
+
     <div id="start-screen">
       <p>당신의 이름을 입력하세요:</p>
-      <input type="text" id="user-name" placeholder="이름 입력">
+      <input type="text" id="user-name" placeholder="이름 입력" />
       <button onclick="startTest()">시작하기</button>
     </div>
-
-    <form id="quiz-form" style="display:none;"></form>
 
     <div id="result-screen" style="display:none;">
       <h2 id="result-title"></h2>
