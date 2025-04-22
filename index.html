@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>짝사랑 확률 테스트</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💘 짝사랑 확률 테스트</h1>
+    
+    <div id="start-screen">
+      <p>당신의 이름을 입력하세요:</p>
+      <input type="text" id="user-name" placeholder="이름 입력">
+      <button onclick="startTest()">시작하기</button>
+    </div>
 
+    <form id="quiz-form" style="display:none;"></form>
+
+    <div id="result-screen" style="display:none;">
+      <h2 id="result-title"></h2>
+      <p id="result-message"></p>
+      <button onclick="location.reload()">다시 하기</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
